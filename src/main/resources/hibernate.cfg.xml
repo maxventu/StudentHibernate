@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/students2</property>
+        <property name="hibernate.connection.username">mkalenik</property>
+        <property name="connection.password">mkalenik</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping class="itechart.studentjpa.entity.Group"/>
+        <mapping class="itechart.studentjpa.entity.GroupLecture"/>
+        <mapping class="itechart.studentjpa.entity.GroupLecturePK"/>
+        <mapping class="itechart.studentjpa.entity.Lecture"/>
+        <mapping class="itechart.studentjpa.entity.LostStudent"/>
+        <mapping class="itechart.studentjpa.entity.Student"/>
+        <mapping class="itechart.studentjpa.entity.Teacher"/>
+    </session-factory>
+</hibernate-configuration>
