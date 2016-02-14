@@ -110,7 +110,7 @@ public class Group implements Serializable,AbstractEntity {
 
         Group that = (Group) obj;
 
-        return (id != null ? id.equals(that.name) : that.id == null)
+        return (id != null ? id.equals(that.id) : that.id == null)
                 &&(name != null ? name.equals(that.name) : that.name == null)
                 && (created != null ? created.equals(that.created) : that.created == null)
                 && (curator != null ? curator.equals(that.curator) : that.curator == null)
